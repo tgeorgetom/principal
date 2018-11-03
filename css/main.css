@@ -1,0 +1,244 @@
+/**
+ *  Abstracts
+ */
+/*
+ * Neutral Colors
+ * 1) Neutral color variables use a numbered system to define variables for better maintainability.
+ *    "$color-gray-10" means "10% gray", which is a gray closer to white than to black. For more info
+ *    read https://medium.com/eightshapes-llc/color-in-design-systems-a1c80f65fa3#.brevrq67p
+ */
+/**
+ *  Base
+ */
+/**
+ * Gradient Animation 
+ */
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+/**
+ * Grain background 
+ */
+/*------------------------------------*\
+    #RESET
+\*------------------------------------*/
+/**
+ * Use border box on all elements
+ */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/**
+ * Zero out margin and padding on most elements as base style
+ */
+html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, ol, ul, li, form, legend, label, table, header, footer, nav, section, figure {
+  margin: 0;
+  padding: 0; }
+
+/**
+ * Display block as base for these elements
+ */
+header, footer, nav, section, article, hgroup, figure {
+  display: block; }
+
+/**
+ * Display block as base for these elements
+ */
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+/**
+ * Common
+ */
+.h1 {
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 1.25;
+  padding-bottom: 27px; }
+
+/*------------------------------------*\
+    #BODY
+\*------------------------------------*/
+/**
+ * Body base styles
+ */
+body {
+  background: #f9f9f9;
+  color: #fff; }
+
+* {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  box-sizing: border-box; }
+
+body, html {
+  height: 100%; }
+
+/**
+ * Components
+ */
+/*------------------------------------*\
+    #Hero Banner
+\*------------------------------------*/
+.hero-banner {
+  background: #001a29;
+  height: 100%;
+  vertical-align: middle;
+  display: table;
+  width: 100%; }
+  .hero-banner .hero-banner-content {
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0; }
+    .hero-banner .hero-banner-content .hero-banner-left h1 {
+      font-size: 56px;
+      font-weight: 600;
+      line-height: 1.25;
+      padding-bottom: 27px; }
+    .hero-banner .hero-banner-content .hero-banner-left p {
+      font-size: 28px;
+      line-height: 1.54; }
+  @media (max-width: 767px) {
+    .hero-banner .hero-banner-content {
+      position: static;
+      transform: none; } }
+
+.navbar {
+  background: transparent !important;
+  padding-left: 0;
+  padding-right: 0; }
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff; }
+
+.navbar-expand-md .navbar-nav .nav-link {
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.common-form {
+  border-radius: 2px;
+  box-shadow: 0 2px 19px 6px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  max-width: 477px;
+  padding: 33px 41px 18px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.23; }
+  .common-form h4 {
+    color: #001a29;
+    padding-bottom: 26px;
+    font-size: 30px;
+    font-weight: 600; }
+  .common-form label {
+    color: #4a4a4a;
+    padding-bottom: 12px;
+    font-size: 12px;
+    font-weight: normal; }
+  .common-form .form-group {
+    margin-bottom: 25px; }
+  .common-form .form-start {
+    display: flex;
+    border: 1px solid #d8d8d8; }
+    .common-form .form-start .form-check-inline {
+      flex: 1;
+      margin-right: 0;
+      border-right: 1px solid #d8d8d8; }
+      .common-form .form-start .form-check-inline input {
+        opacity: 0;
+        position: absolute; }
+      .common-form .form-start .form-check-inline .form-check-label {
+        padding-bottom: 0;
+        font-size: 16px;
+        font-weight: 500;
+        margin: 0 auto;
+        padding: 13px 10px; }
+  .common-form .form-bottom-desc {
+    padding-bottom: 0; }
+  .common-form input, .common-form textarea {
+    padding: 10px 17px;
+    height: auto;
+    border-radius: 0;
+    resize: none; }
+  .common-form .form-submit {
+    border-radius: 2px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+    background-color: #ff1654;
+    max-width: 283px;
+    padding: 15px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    width: 100%;
+    max-width: none;
+    margin-bottom: 12px;
+    font-weight: 500; }
+    .common-form .form-submit:hover {
+      color: #fff;
+      background-color: #d64b56; }
+
+/**
+ * Get In Touch
+ */
+.get-in-touch {
+  padding: 129px 0;
+  background: #006cab; }
+  .get-in-touch .get-in-touch-content li {
+    padding-bottom: 15px; }
+    .get-in-touch .get-in-touch-content li i {
+      font-size: 32px;
+      opacity: 0.65; }
+    .get-in-touch .get-in-touch-content li a {
+      color: #fff;
+      font-size: 32px;
+      margin-left: 30px; }
+
+footer {
+  padding-top: 64px;
+  background-color: #00273e; }
+  footer .footer-nav {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d8d8d8; }
+    footer .footer-nav a {
+      color: #fff;
+      font-weight: 500;
+      padding-bottom: 20px;
+      display: block; }
+    footer .footer-nav .footer-head {
+      font-weight: 600;
+      font-size: 16px;
+      padding-bottom: 23px; }
+    footer .footer-nav .footer-logo {
+      padding-bottom: 42px;
+      color: #fff;
+      font-size: 26px;
+      display: block;
+      letter-spacing: 2.1px; }
+
+/*# sourceMappingURL=main.css.map */

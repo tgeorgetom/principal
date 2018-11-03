@@ -1,0 +1,40 @@
+/*------------------------------------*\
+    #Hero Banner
+\*------------------------------------*/
+
+.hero-banner{
+	background: #001a29;
+	height: 100%;
+	vertical-align: middle;
+	display: table;
+	width: 100%;
+
+	.hero-banner-content {
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    .hero-banner-left{
+    	h1{
+			font-size: 56px;
+			font-weight: 600;
+			line-height: 1.25;
+			padding-bottom: 27px;
+    	}
+    	p{
+    		font-size: 28px;
+			  line-height: 1.54;
+    	}
+    }
+	}
+
+
+
+	@media (max-width: 767px){
+		.hero-banner-content {
+			position: static;
+			transform: none;
+		}
+	}
+}

@@ -1,0 +1,72 @@
+.common-form{
+	border-radius: 2px;
+	box-shadow: 0 2px 19px 6px rgba(0, 0, 0, 0.1);
+	background: $color-white;
+	max-width: 477px;
+	padding: 33px 41px 18px; 
+	text-align: center;
+	font-size: 30px;
+  font-weight: 600;
+  line-height: 1.23;
+
+	h4{
+		color: $bg-2;
+		padding-bottom: 26px;
+		font-size: 30px;
+		font-weight: 600;
+	}
+
+	label{
+		color: $text-2;
+		padding-bottom: 12px;
+		font-size: 12px;
+		font-weight: normal;
+	}
+	
+	.form-group{
+		margin-bottom: 25px;
+	}
+
+	.form-start {
+		display: flex;
+		border: 1px solid #d8d8d8;
+
+		.form-check-inline{
+			flex: 1;
+			margin-right: 0;
+			border-right: 1px solid #d8d8d8;
+
+			input{
+				opacity: 0;
+				position: absolute;
+			}
+
+			.form-check-label{
+				padding-bottom: 0;
+				font-size: 16px;
+				font-weight: 500;
+				margin: 0 auto;
+				padding: 13px 10px;
+			}
+		}
+	}
+
+	.form-bottom-desc{
+		padding-bottom: 0;
+	}
+
+	input, textarea{
+		padding: 10px 17px;
+		height: auto;
+		border-radius: 0;
+		resize: none;
+	}
+
+	.form-submit{
+		@include btn-red();
+		width: 100%;
+		max-width: none;
+		margin-bottom: 12px;
+		font-weight: 500;
+	}
+}
